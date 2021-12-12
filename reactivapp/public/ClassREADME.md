@@ -1,7 +1,10 @@
 # react_clase
 primera clase de react 
 
-Clase: https://github.com/TheBridge-FullStackDeveloper/temario_fullstack_FT_sept21/blob/main/teoria/react/clase33.md 
+Clase: https://github.com/TheBridge-FullStackDeveloper/temario_fullstack_FT_sept21/blob/main/teoria/react/clase34.md
+
+https://github.com/TheBridge-FullStackDeveloper/temario_fullstack_FT_sept21/blob/main/teoria/react/clase35.md
+
 
 Pasos : 
 npx create-react-app my-app -> Crea toda la estructura 
