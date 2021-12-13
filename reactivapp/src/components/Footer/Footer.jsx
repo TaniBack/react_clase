@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import './Footer.css';
 
 export class Footer extends Component {
     render() {
         return (
-            <div>
-                <p>Clase 34, 35 y 36 - Intro React</p>    
+            <div class="Footer">
+                <p>Clase 34, 35 , 36 y 37 - Intro React</p>    
             </div>
         )
     }
