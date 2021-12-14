@@ -13,9 +13,6 @@ class Nav extends Component {
         <li><Link to="/contact">Contact</Link></li>
         {/* Link to sustituye a Href */}
       </ul>
-
-
-
     </nav>;
   }
 }

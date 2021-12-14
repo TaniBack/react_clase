@@ -30,8 +30,8 @@ export class Products extends Component {
     }
 
     // Funcion de añadir un producto desde el Form 
-    createProductForm = (name, price, supplier) => {
-        const newProduct = {name, price, supplier}
+    createProductForm = (name, price, supplier, picture) => {
+        const newProduct = {name, price, supplier, picture}
 
         this.setState({lastAdded:newProduct})
         this.setState({productList:[...this.state.productList, newProduct]})
@@ -68,12 +68,14 @@ export class Products extends Component {
         event.preventDefault();
         // obtenemos los valores del Form y llamamos a la funcion de crear producto createProductForm 
             // const name = event.target.name.value
-            const name = this.name.currentValue
+            // const name = this.name.currentValue
+            const name = event.target.name.value
             const price = event.target.price.value
             const supplier = event.target.supplier.value
+            const picture = event.target.picture.value
         // Tambien podeos usar el Reac.createRef (usar referencia) para acceder a los datos del Form 
             const nameDos = "uso de Referencias"
-        this.createProductForm (name, price, supplier) //Crear producto 
+        this.createProductForm (name, price, supplier, picture) //Crear producto 
     }
     
     // es una mala practica meter querySelector dentro de las funciones en React (por conflictos con el DOM virtual) Podemos usar las referencias (event.target.elements.name)
@@ -114,11 +116,13 @@ export class Products extends Component {
                 <h5>Formulario de creacion de producto</h5>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Nombre:</label><br/>
-                    <input type="text" id="name" name="name" onChange={this.handleChange} ref={this.name}/><br />
+                    <input type="text" name="name" onChange={this.handleChange} ref={this.name}/><br />
                     <label htmlFor="price">Precio:</label><br/>
-                    <input type="number" id="price" name="price"/><br/>
+                    <input type="number"  name="price"/><br/>
                     <label htmlFor="supplier">Proveedor:</label><br/>
-                    <input type="text" id="supplier" name="supplier"/><br />
+                    <input type="text" name="supplier"/><br/>
+                    <label htmlFor="picture">Imagen:</label><br/>
+                    <input type="url" name="picture"/><br/>
                     <input type="submit"/>
                 </form> 
 
