@@ -11,6 +11,7 @@ class Nav extends Component {
         <li><Link to="/about">About</Link></li>
         <li><Link to="/staff">Staff</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/donate">Donate</Link></li>
         {/* Link to sustituye a Href */}
       </ul>
     </nav>;
