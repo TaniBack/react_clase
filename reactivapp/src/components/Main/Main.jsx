@@ -4,6 +4,9 @@ import About from '../About'
 import Staff from '../Staff'
 import Contact from '../Contact'
 import Donate from '../Donate'
+import Pokeuser from '../Pokeuser'
+import Topic from '../Topic'
+
 import {Route, Routes} from 'react-router-dom';
 
 
@@ -20,6 +23,9 @@ export class Main extends Component {
                 <Route path="/staff" element={<Staff/>} />
                 <Route path="/contact" element={<Contact/>} />
                 <Route path="/donate" element={<Donate/>} />
+                <Route path="/pokeuser" element={<Pokeuser/>} />
+                <Route path="/topic" element={<Topic/>} />
+
             </Routes>
             </main>
         )

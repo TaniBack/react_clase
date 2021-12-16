@@ -1,0 +1,11 @@
+ul.pokemons{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
+
+li.pokemons {
+    list-style: none;
+    margin: 5%;
+}
