@@ -14,6 +14,7 @@ class Nav extends Component {
         <li className="header"><Link to="/donate">Donate</Link></li>
         <li className="header"><Link to="/pokeuser">Poke Users</Link></li>
         <li className="header"><Link to="/topic">Topics</Link></li>
+        <li className="header"><Link to="/pokeuserhoked">PokeHoked</Link></li>
         {/* Link to sustituye a Href */}
       </ul>
     </nav>;

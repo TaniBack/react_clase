@@ -6,6 +6,7 @@ import Contact from '../Contact'
 import Donate from '../Donate'
 import Pokeuser from '../Pokeuser'
 import Topic from '../Topic'
+import Pokeuserhoked from '../Pokeuserhoked'
 
 import {Route, Routes} from 'react-router-dom';
 
@@ -25,6 +26,7 @@ export class Main extends Component {
                 <Route path="/donate" element={<Donate/>} />
                 <Route path="/pokeuser" element={<Pokeuser/>} />
                 <Route path="/topic" element={<Topic/>} />
+                <Route path="/pokeuserhoked" element={<Pokeuserhoked/>} />
 
             </Routes>
             </main>
