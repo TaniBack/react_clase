@@ -1,24 +1,32 @@
-import React, { Component } from "react";
+// importamos el contexto que vamos a usar
+import React, { useContext } from "react";
 import {Link} from 'react-router-dom';
-import './Nav.css';
+import './Nav.css'
 
-class Nav extends Component {
-  render() {
-    return <nav>
-      <ul className="header">
-        {/* Creamos una lista de navegacion y le indicamos a donde enruta */}
-        <li className="header"><Link to="/">Home</Link></li>
-        <li className="header"><Link to="/about">About</Link></li>
-        <li className="header"><Link to="/staff">Staff</Link></li>
-        <li className="header"><Link to="/contact">Contact</Link></li>
-        <li className="header"><Link to="/donate">Donate</Link></li>
-        <li className="header"><Link to="/pokeuser">Poke Users</Link></li>
-        <li className="header"><Link to="/topic">Topics</Link></li>
-        <li className="header"><Link to="/pokeuserhoked">PokeHoked</Link></li>
-        {/* Link to sustituye a Href */}
+// Importamos Context
+// themeContext de componente funcional Hooks
+import { themeContext } from '../../context/themeContext';
+
+function Nav() {
+
+  const {theme, toggleTheme} = useContext(themeContext); 
+
+  return (
+    <nav className={`nav ${theme}`}>
+    {/* Creamos una lista de navegacion y le indicamos a donde enruta */}
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/staff">Staff</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/donate">Donate</Link></li>
+        <li><Link to="/pokeuser">Pokeuser</Link></li>
+        <li><Link to="/topics">Topics</Link></li>
+                {/* Link to sustituye a Href */}
+
       </ul>
-    </nav>;
-  }
+    </nav>
+    );
 }
 
-export default Nav;
+export default Nav

@@ -5,6 +5,7 @@ import React, { Component } from "react";
 class Contact extends Component {
   static contextType = userContext  //Adhiere el contexto deseado a la clase  / añade a la clase un nuevo contexto  variable de JS = a mi contexto . Para evitar el uso de la etiqueta en el html de  <userContext.Consumer> 
 
+
   constructor(props) {
     super(props)
     this.name = React.createRef(); // crear la referencia
@@ -27,10 +28,14 @@ class Contact extends Component {
     event.preventDefault();
     const name = this.name.current.value // hacemos uso del valor del campo por referencia
     this.setState({name}) //actualizamos el estado 
-    // Para consumir contexto , usamos un destructuring de context  valores = valoresreservados "this.context"
+
+    // Para consumir contexto , usamos un destructuring de context  que vienen dados del Provider 
     const {login, logout} = this.context
-    // Invocar a login  por provider, cambia contexto internamente 
+    // valores = valoresreservados "this.context"
+    // Se puede usar como un elemento mas sin una funcion creasda por mi (ya creada)
     login(name);
+    // Invocar a login  por provider, cambia contexto internamente 
+
     this.name.current.value = ""
   }
 
