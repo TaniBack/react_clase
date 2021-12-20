@@ -3,10 +3,12 @@
 import React, { useState } from 'react';
 
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import './styles/styles.scss'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Main from './components/Main'
+import './styles/styles.scss';
 
 // Importamos BrowserRouter para hacer redirecciones 
 import { BrowserRouter } from 'react-router-dom';

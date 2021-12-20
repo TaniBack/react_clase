@@ -1,7 +1,7 @@
 // importamos el contexto que vamos a usar
 import React, { useContext } from "react";
 import {Link} from 'react-router-dom';
-import './Nav.css'
+// import './Nav.css'
 
 // Importamos Context
 // themeContext de componente funcional Hooks

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../Nav'
-import './Header.css';
+// import './Header.css';
 
 // Importamos Context
 // useContext de componente funcional Hooks
@@ -18,7 +18,7 @@ export class Header extends Component {
                         <header className={"header " + theme}>
                             <button onClick={toggleTheme}>Modo día/noche</button>
                             <div className="header-title">
-                                <h1>First Rect App Project</h1>
+                                <h1 className="header--h1">First Rect App Project</h1>
                                 <Nav />
                             </div>
                             {/* invocamos al userContext para poder hacer uso de el mismo con las etiquetas */}

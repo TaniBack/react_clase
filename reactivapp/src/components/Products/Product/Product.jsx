@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Product.css';
 
+import Button from '@mui/material/Button';
+
 export class Product extends Component {
     // rconst 
     constructor(props) {
@@ -26,7 +28,10 @@ export class Product extends Component {
                     <img src={this.state.picture} alt={name} id="imgProduct"/>
                         <figcaption>Imagen de {name} a {price}€</figcaption>
                 </figure>
-                <button onClick={this.props.delete}>Borrar item</button>
+                
+                <Button onClick={this.props.delete} variant='contained'>Borrar</Button>
+                
+                {/* <button onClick={this.props.delete}>Borrar item</button> */}
                 {/* obtenemos la funcion de deleteProduct desde el padre Products */}
             </div>
         )

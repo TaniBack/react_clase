@@ -1,0 +1,23 @@
+.nav> ul {
+@include lista;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav> ul > li{
+        margin: 5px;
+        list-style: none;
+}
+
+.nav> ul > li > a{
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(37, 35, 35);
+        }
+
+.dark > ul > li > a {
+      color: white;
+
+}
